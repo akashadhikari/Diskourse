@@ -14,10 +14,10 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 Follow these steps to install Diskourse on your system:
 
-1) git clone https://github.com/akashadhikari/Project.git
-2) composer install
-3) Adjust your database name, username and password fields in .env file.
-5) php artisan migrate
+1) git clone https://github.com/akashadhikari/Project.git <br>
+2) composer install <br>
+3) Adjust your database name, username and password fields in .env file. <br>
+4) php artisan migrate
 
 
 ## Contributing
