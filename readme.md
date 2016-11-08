@@ -1,4 +1,4 @@
-## Laravel PHP Framework
+## Installation procedure and brief introduction of Laravel.
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
@@ -10,18 +10,24 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+## Installation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Follow these steps to install Diskourse on your system:
+
+1) git clone https://github.com/akashadhikari/Project.git
+2) composer install
+3) Adjust your database name, username and password fields in .env file.
+5) php artisan migrate
+
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Thank you for considering contributing to the Diskourse! Feel free to add or modify to this application.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability or bugs within this application, please send an e-mail to Akash Adhikari at akash_532998@yahoo.com. All vulnerabilities will be promptly addressed.
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Diskourse is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
