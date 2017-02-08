@@ -50,7 +50,7 @@
                                 <li><a href="{{ route('profile.videos') }}" data-toggle="tooltip" title="Videos"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></a></li>
 
                                 <li><a href="#" data-toggle="tooltip" title="Notifications"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="badge">42</span></a></li>                                
-                                <li><a href="{{ route('message.index') }}" data-toggle="tooltip" title="Messages"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><span class="badge">5</span></a></li>
+                                <li><a href="#" data-toggle="tooltip" title="Messages"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><span class="badge">5</span></a></li>
                                 
                                 <li><a href="{{ route('auth.signout') }}">Sign out <span class="glyphicon glyphicon-off" aria-hidden="true"></span></a></li>
                                 @else

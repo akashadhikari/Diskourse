@@ -22,6 +22,10 @@ class StatusController extends Controller {
 		->with('info', 'Your status has been posted.');
 	}
 
+	public function getStatus() {
+		return view('status.index');
+	}
+
 	public function postReply(Request $request, $statusId) {
 		$this->validate($request, [
 			"reply-{$statusId}"=>'required|max:1000',
@@ -54,7 +58,7 @@ class StatusController extends Controller {
 		if(!$status) {
 			return redirect()->route('home');
 		}
-        
+
 
 	    if(!Auth::user()->isFriendsWith($status->user)) {
 		    return redirect()->route('home');

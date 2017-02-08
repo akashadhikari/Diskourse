@@ -89,11 +89,17 @@ Route::post('/list/delete/{username}', [
 	'uses' => '\Diskourse\Http\Controllers\FriendController@postDelete',
 	'as'   => 'friends.delete',
 	'middleware' => ['auth'],
-]);	
+]);
 
 Route::post('/status', [
 	'uses' => '\Diskourse\Http\Controllers\StatusController@postStatus',
 	'as'   => 'status.post',
+	'middleware' => ['auth'],
+]);
+
+Route::get('/status', [
+	'uses' => '\Diskourse\Http\Controllers\StatusController@getStatus',
+	'as'   => 'status.index',
 	'middleware' => ['auth'],
 ]);
 
@@ -109,23 +115,6 @@ Route::get('/status/{statusId}/like', [
 	'middleware' => ['auth'],
 ]);
 
-Route::get('/message', [
-	'uses' => '\Diskourse\Http\Controllers\MessageController@getMessage',
-	'as'   => 'message.index',
-	'middleware' => ['auth'],
-]);
-
-Route::post('/message', [
-	'uses' => '\Diskourse\Http\Controllers\MessageController@postMessage',
-	'as'   => 'message.post',
-	'middleware' => ['auth'],
-]);
-
-Route::post('/message/{messageId}/reply', [
-	'uses' => '\Diskourse\Http\Controllers\MessageController@postReply',
-	'as'   => 'message.reply',
-	'middleware' => ['auth'],
-]);
 
 Route::get('/profile/videos', [
 	'uses' => '\Diskourse\Http\Controllers\ProfileController@getVideos',
@@ -143,7 +132,7 @@ Route::get('/studymaterials',[
 	'as'=> 'templates.studymaterials.index',
 	'middleware' => ['guest'],
 	]);
-	
+
 Route::get('/studymaterials/upload',[
 	'uses'=> '\Diskourse\Http\Controllers\ResourceController@getUpload',
 	'as'=> 'templates.studymaterials.upload',

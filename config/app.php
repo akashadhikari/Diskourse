@@ -146,6 +146,8 @@ return [
         Diskourse\Providers\AuthServiceProvider::class,
         Diskourse\Providers\EventServiceProvider::class,
         Diskourse\Providers\RouteServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
+        DevDojo\Chatter\ChatterServiceProvider::class,
 
     ],
 
@@ -197,6 +199,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Html'      => Illuminate\Html\HtmlFacade::class,
         'Form'      => Illuminate\Html\FormFacade::class,
+        'Datatables' => Yajra\Datatables\Facades\Datatables::class,
 
     ],
 
